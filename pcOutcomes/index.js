@@ -12,11 +12,15 @@ class Data {
     }
 
     displayOutput() {
-        console.log(`outcomeCounter: ${this.outcomeCounter}`);
-        console.log(`consecuitive losses before guarenteed win: ${this.pittyRound}`);
-        console.log(`targetPercentae: ${this.targetPercentage}`);
-        console.log(`outcomePercentae: ${this.outcomePercentage}`);
-        console.log(`adjustedOutcomePercentae: ${this.adjustedOutcomePercentage}`);
+        console.log(`
+            TEST OUTPUT:
+            ===========
+            outcomeCounter: ${this.outcomeCounter} 
+            consecuitive losses before guarenteed win: ${this.pittyRound}
+            targetPercentae: ${this.targetPercentage}
+            outcomePercentae: ${this.outcomePercentage}
+            adjustedOutcomePercentae: ${this.adjustedOutcomePercentage}
+            `);
     }
 }
 
