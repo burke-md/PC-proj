@@ -10,6 +10,14 @@ class Data {
         this.outcomePercentage = null;
         this.adjustedOutcomePercentage = null;
     }
+
+    displayOutput() {
+        console.log(`outcomeCounter: ${this.outcomeCounter}`);
+        console.log(`consecuitive losses before guarenteed win: ${this.pittyRound}`);
+        console.log(`targetPercentae: ${this.targetPercentage}`);
+        console.log(`outcomePercentae: ${this.outcomePercentage}`);
+        console.log(`adjustedOutcomePercentae: ${this.adjustedOutcomePercentage}`);
+    }
 }
 
 const runTest = (info) => {
@@ -32,11 +40,7 @@ const runTest = (info) => {
     info.adjustedOutcomePercentage = 
                 (info.outcomeCounter + info.pittyCounter) / info.rounds * 100;
 
-    console.log(`outcomeCounter: ${info.outcomeCounter}`);
-    console.log(`consecuitive losses before guarenteed win: ${info.pittyRound}`);
-    console.log(`targetPercentae: ${info.targetPercentage}`);
-    console.log(`outcomePercentae: ${info.outcomePercentage}`);
-    console.log(`adjustedOutcomePercentae: ${info.adjustedOutcomePercentage}`);
+    info.displayOutput();
 }
 
 const test1 = new Data(10, 11);
