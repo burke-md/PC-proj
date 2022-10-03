@@ -31,6 +31,7 @@ const runTest = (info) => {
         // Count wins, count number of large sequential losses (2nd arg in def)
         if (value < info.targetPercentage - 1) {
             info.outcomeCounter++;
+            info.sequentialLossCounter = 0;
         } else {
             info.sequentialLossCounter++;
             if (info.sequentialLossCounter == info.pittyRound) {
